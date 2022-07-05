@@ -27,18 +27,18 @@ def select_all():
         authors.append(author)
     return authors
 
-def select(id):
-    sql = "SELECT * FROM authors WHERE id = %s"
-    values = [id]
-    row = run_sql(sql, values)[0]
-    if row is not None:
-        author = Author(
-            row['first_name'],
-            row['last_name'],
-            row['id']
-        )
-    return author
+# def select(id):
+#     sql = "SELECT * FROM authors WHERE id = %s"
+#     values = [id]
+#     row = run_sql(sql, values)[0]
+#     if row is not None:
+#         author = Author(
+#             row['first_name'],
+#             row['last_name'],
+#             row['id']
+#         )
+#     return author
 
-def delete_all():
-    sql = "DELETE FROM authors"
-    run_sql(sql)
+# def delete_all():
+#     sql = "DELETE FROM authors"
+#     run_sql(sql)

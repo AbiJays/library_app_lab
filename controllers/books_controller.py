@@ -10,5 +10,25 @@ def books():
     books = book_repository.select_all()
     return render_template("books/index.html", all_books = books)
 
-# books_blueprint.route
+# NEW
+# GET '/books/new'
 
+
+# CREATE
+# POST '/books'
+
+
+# SHOW
+# GET '/books/<id>'
+
+
+# EDIT
+# GET '/books/<id>/edit'
+
+
+# UPDATE
+# PUT '/books/<id>'
+
+
+# DELETE
+# DELETE '/books/<id>'
